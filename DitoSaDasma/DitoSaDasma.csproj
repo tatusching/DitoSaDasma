@@ -1,0 +1,685 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{951F68DF-F54A-476C-9DF2-9CFA395DE5B2}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DitoSaDasma</RootNamespace>
+    <AssemblyName>DitoSaDasma</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44332</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AdminAdventure.aspx" />
+    <Content Include="AdminAmusement.aspx" />
+    <Content Include="AdminFamFriend.aspx" />
+    <Content Include="AdminHistorical.aspx" />
+    <Content Include="AdminHotel.aspx" />
+    <Content Include="AdminRestaurant.aspx" />
+    <Content Include="Adventure1.aspx" />
+    <Content Include="Adventure2.aspx" />
+    <Content Include="Adventure3.aspx" />
+    <Content Include="Adventure4.aspx" />
+    <Content Include="adventure\adjabez.jpg" />
+    <Content Include="adventure\adjabez2.jpg" />
+    <Content Include="adventure\adjabez3.jpg" />
+    <Content Include="adventure\admalipay.jpg" />
+    <Content Include="adventure\adorchard.jpg" />
+    <Content Include="adventure\adorchard2.jpg" />
+    <Content Include="adventure\adorchard3.jpg" />
+    <Content Include="adventure\adorchard4.jpg" />
+    <Content Include="adventure\adorchard5.jpg" />
+    <Content Include="adventure\adorchard6.jpg" />
+    <Content Include="adventure\adplace1.png" />
+    <Content Include="adventure\adplace2.png" />
+    <Content Include="adventure\adplace3.png" />
+    <Content Include="adventure\adplace4.png" />
+    <Content Include="adventure\adwest.jpg" />
+    <Content Include="adventure\adwest2.jpg" />
+    <Content Include="App_Data\DitoSaDasmaDB.mdf" />
+    <Content Include="App_Data\DitoSaDasmaDB_log.ldf">
+      <DependentUpon>DitoSaDasmaDB.mdf</DependentUpon>
+    </Content>
+    <Content Include="CatAdventure.aspx" />
+    <Content Include="CatAmusement.aspx" />
+    <Content Include="CatFamFriend.aspx" />
+    <Content Include="CatHistorical.aspx" />
+    <Content Include="CatHotel.aspx" />
+    <Content Include="CatRestaurant.aspx" />
+    <Content Include="FamFriend1.aspx" />
+    <Content Include="FamFriend2.aspx" />
+    <Content Include="FamFriend3.aspx" />
+    <Content Include="FamFriend4.aspx" />
+    <Content Include="FamFriend5.aspx" />
+    <Content Include="FamFriend6.aspx" />
+    <Content Include="FamFriend7.aspx" />
+    <Content Include="famfriendly\ffdc.jpg" />
+    <Content Include="famfriendly\ffdc1.png" />
+    <Content Include="famfriendly\ffdc2.png" />
+    <Content Include="famfriendly\ffdc3.jpg" />
+    <Content Include="famfriendly\ffdc4.jpg" />
+    <Content Include="famfriendly\ffdistrict.jpg" />
+    <Content Include="famfriendly\ffdistrict2.jpg" />
+    <Content Include="famfriendly\fflover.jpg" />
+    <Content Include="famfriendly\fflover2.jpg" />
+    <Content Include="famfriendly\fflover3.jpg" />
+    <Content Include="famfriendly\ffplace1.png" />
+    <Content Include="famfriendly\ffplace2.png" />
+    <Content Include="famfriendly\ffplace3.png" />
+    <Content Include="famfriendly\ffplace4.png" />
+    <Content Include="famfriendly\ffplace5.png" />
+    <Content Include="famfriendly\ffplace6.png" />
+    <Content Include="famfriendly\ffplace7.png" />
+    <Content Include="famfriendly\ffpromenade.jpg" />
+    <Content Include="famfriendly\ffpromenade2.jpg" />
+    <Content Include="famfriendly\ffpromenade3.jpg" />
+    <Content Include="famfriendly\ffpromenade4.jpg" />
+    <Content Include="famfriendly\ffpromenade5.jpg" />
+    <Content Include="famfriendly\ffpromlogo.jpg" />
+    <Content Include="famfriendly\ffrob.jpg" />
+    <Content Include="famfriendly\ffrob2.jpg" />
+    <Content Include="famfriendly\ffsm.jpg" />
+    <Content Include="famfriendly\ffsm2.jpg" />
+    <Content Include="famfriendly\ffsm3.jpg" />
+    <Content Include="famfriendly\ffsmlogo.png" />
+    <Content Include="famfriendly\ffvista.jpg" />
+    <Content Include="famfriendly\ffvista2.jpg" />
+    <Content Include="famfriendly\places.png" />
+    <Content Include="Historical1.aspx" />
+    <Content Include="Historical2.aspx" />
+    <Content Include="Historical3.aspx" />
+    <Content Include="historical\edsa.jpg" />
+    <Content Include="historical\edsa2.jpg" />
+    <Content Include="historical\edsa3.jpg" />
+    <Content Include="historical\hiplace1.png" />
+    <Content Include="historical\hiplace2.png" />
+    <Content Include="historical\hiplace3.png" />
+    <Content Include="historical\hmchurch.jpg" />
+    <Content Include="historical\hmchurch1.jpg" />
+    <Content Include="historical\hmchurch2.jpg" />
+    <Content Include="historical\hmchurch3.jpg" />
+    <Content Include="historical\hmmuseo.jpg" />
+    <Content Include="historical\hmmuseo2.jpg" />
+    <Content Include="historical\hmmuseo3.png" />
+    <Content Include="historical\hmmuseo4.png" />
+    <Content Include="historical\hmmuseo5.png" />
+    <Content Include="historical\ica.jpg" />
+    <Content Include="hotel\hrkalipayan.jpg" />
+    <Content Include="hotel\hrkalipayan2.jpg" />
+    <Content Include="hotel\hrkalipayan3.jpg" />
+    <Content Include="hotel\hrkalipayan4.jpg" />
+    <Content Include="hotel\hrkalipayan5.jpg" />
+    <Content Include="hotel\hrkalipayanprice.png" />
+    <Content Include="hotel\hrplace1.png" />
+    <Content Include="hotel\hrplace2.png" />
+    <Content Include="hotel\hrplace3.png" />
+    <Content Include="hotel\hrplace4.png" />
+    <Content Include="hotel\hrplace5.png" />
+    <Content Include="hotel\hrplace6.png" />
+    <Content Include="hotel\hrplace7.png" />
+    <Content Include="hotel\hrqubo.jpg" />
+    <Content Include="hotel\hrqubo2.jpg" />
+    <Content Include="hotel\hrqubo3.jpg" />
+    <Content Include="hotel\hrqubo4.jpg" />
+    <Content Include="hotel\hrquboprice.png" />
+    <Content Include="hotel\hrriver.jpg" />
+    <Content Include="hotel\hrriver2.jpg" />
+    <Content Include="hotel\hrriver3.jpg" />
+    <Content Include="hotel\hrriverprice.png" />
+    <Content Include="hotel\hrsaniya.jpg" />
+    <Content Include="hotel\hrsaniya2.jpg" />
+    <Content Include="hotel\hrsaniya3.jpg" />
+    <Content Include="hotel\hrsaniya4.jpg" />
+    <Content Include="hotel\hrsaniya5.jpg" />
+    <Content Include="hotel\hrsaniyaprice.png" />
+    <Content Include="hotel\hrswiss.jpg" />
+    <Content Include="hotel\hrswiss2.jpg" />
+    <Content Include="hotel\hrswiss3.jpg" />
+    <Content Include="hotel\hrswiss4.jpg" />
+    <Content Include="hotel\hrswissprice.png" />
+    <Content Include="hotel\hrtubigan.jpg" />
+    <Content Include="hotel\hrtubigan2.jpg" />
+    <Content Include="hotel\hrtubigan3.jpg" />
+    <Content Include="hotel\hrtubiganprice.png" />
+    <Content Include="hotel\hrviolet.jpg" />
+    <Content Include="hotel\hrviolet2.jpg" />
+    <Content Include="hotel\hrviolet3.jpg" />
+    <Content Include="hotel\hrviolet4.jpg" />
+    <Content Include="hotel\hrviolet5.jpg" />
+    <Content Include="hotel\hrvioletprice.png" />
+    <Content Include="hotel\places.png" />
+    <Content Include="layout.css" />
+    <Content Include="PageAdmin.aspx" />
+    <Content Include="PageAdminCat.aspx" />
+    <Content Include="PageAdminHome.aspx" />
+    <Content Include="PageAdminReg.aspx" />
+    <Content Include="PageCategories.aspx" />
+    <Content Include="PageHome.aspx" />
+    <Content Include="PageLogIn.aspx" />
+    <Content Include="PageSignIn.aspx" />
+    <Content Include="PageUserHome.aspx" />
+    <Content Include="PageUserProfile.aspx" />
+    <Content Include="PageUserReg.aspx" />
+    <Content Include="PageWhereTo.aspx" />
+    <Content Include="pictures\adminlg.png" />
+    <Content Include="pictures\avatar.png" />
+    <Content Include="pictures\back.png" />
+    <Content Include="pictures\city.png" />
+    <Content Include="pictures\ctAd.png" />
+    <Content Include="pictures\ctAm.png" />
+    <Content Include="pictures\ctFf.png" />
+    <Content Include="pictures\ctHi.png" />
+    <Content Include="pictures\ctHo.png" />
+    <Content Include="pictures\ctRe.png" />
+    <Content Include="pictures\dasma.png" />
+    <Content Include="pictures\email.png" />
+    <Content Include="pictures\event.jpg" />
+    <Content Include="pictures\fb.png" />
+    <Content Include="pictures\go.jpg" />
+    <Content Include="pictures\header.jpg" />
+    <Content Include="pictures\ia.png" />
+    <Content Include="pictures\iad.png" />
+    <Content Include="pictures\if.png" />
+    <Content Include="pictures\ih.png" />
+    <Content Include="pictures\ihi.png" />
+    <Content Include="pictures\ir.png" />
+    <Content Include="pictures\loc.png" />
+    <Content Include="pictures\login.jpg" />
+    <Content Include="pictures\logo1.PNG" />
+    <Content Include="pictures\logo2.png" />
+    <Content Include="pictures\next.png" />
+    <Content Include="pictures\p.jpg" />
+    <Content Include="pictures\paruparo.jpg" />
+    <Content Include="pictures\paruparo2.jpg" />
+    <Content Include="pictures\phone.png" />
+    <Content Include="pictures\regs.jpg" />
+    <Content Include="pictures\sanpunta.jpg" />
+    <Content Include="pictures\signin.jpg" />
+    <Content Include="pictures\snakerd.jpg" />
+    <Content Include="pictures\web.png" />
+    <Content Include="pictures\where.jpg" />
+    <Content Include="Restaurant1.aspx" />
+    <Content Include="Restaurant2.aspx" />
+    <Content Include="Restaurant3.aspx" />
+    <Content Include="Restaurant4.aspx" />
+    <Content Include="Restaurant5.aspx" />
+    <Content Include="Restaurant6.aspx" />
+    <Content Include="Restaurant7.aspx" />
+    <Content Include="restaurant\r1.png" />
+    <Content Include="restaurant\r2.png" />
+    <Content Include="restaurant\r3.png" />
+    <Content Include="restaurant\r4.png" />
+    <Content Include="restaurant\r5.png" />
+    <Content Include="restaurant\r6.png" />
+    <Content Include="restaurant\r7.png" />
+    <Content Include="restaurant\rbon.jpg" />
+    <Content Include="restaurant\rbon2.jpg" />
+    <Content Include="restaurant\rbon3.jpg" />
+    <Content Include="restaurant\rbon4.jpg" />
+    <Content Include="restaurant\rcoftea1.jpg" />
+    <Content Include="restaurant\rcoftea2.jpg" />
+    <Content Include="restaurant\rcoftea3.jpg" />
+    <Content Include="restaurant\rcountry.jpg" />
+    <Content Include="restaurant\rcountry2.jpg" />
+    <Content Include="restaurant\rdayo.jpg" />
+    <Content Include="restaurant\rdayo2.jpg" />
+    <Content Include="restaurant\rgilmar.jpg" />
+    <Content Include="restaurant\rgilmar2.jpg" />
+    <Content Include="restaurant\rgilmar3.jpg" />
+    <Content Include="restaurant\rgilmar4.jpg" />
+    <Content Include="restaurant\rlogo1.png" />
+    <Content Include="restaurant\rlogo2.jpg" />
+    <Content Include="restaurant\rlogo3.png" />
+    <Content Include="restaurant\rlogo4.png" />
+    <Content Include="restaurant\rlogo5.jpg" />
+    <Content Include="restaurant\rlogo6.1.png" />
+    <Content Include="restaurant\rlogo6.png" />
+    <Content Include="restaurant\rlogo7.jpg" />
+    <Content Include="restaurant\rsari.jpg" />
+    <Content Include="restaurant\rsari2.jpg" />
+    <Content Include="restaurant\rsilog.jpg" />
+    <Content Include="restaurant\rsilog2.jpg" />
+    <Content Include="restaurant\rsilog3.jpg" />
+    <Content Include="restaurant\rvine.jpg" />
+    <Content Include="restaurant\rvine2.jpg" />
+    <Content Include="restaurant\rvine3.jpg" />
+    <Content Include="salone.jpg" />
+    <Content Include="sambivert.jpg" />
+    <Content Include="sentertain.jpg" />
+    <Content Include="sextrovert.jpg" />
+    <Content Include="sfamily.jpg" />
+    <Content Include="sfriend.jpg" />
+    <Content Include="shistory.jpg" />
+    <Content Include="sintrovert.jpg" />
+    <Content Include="somnivert.jpg" />
+    <Content Include="soutdoor.jpg" />
+    <Content Include="srelax.jpg" />
+    <Content Include="sstranger.jpg" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdminAdventure.aspx.cs">
+      <DependentUpon>AdminAdventure.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminAdventure.aspx.designer.cs">
+      <DependentUpon>AdminAdventure.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminAmusement.aspx.cs">
+      <DependentUpon>AdminAmusement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminAmusement.aspx.designer.cs">
+      <DependentUpon>AdminAmusement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminFamFriend.aspx.cs">
+      <DependentUpon>AdminFamFriend.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminFamFriend.aspx.designer.cs">
+      <DependentUpon>AdminFamFriend.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminHistorical.aspx.cs">
+      <DependentUpon>AdminHistorical.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminHistorical.aspx.designer.cs">
+      <DependentUpon>AdminHistorical.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminHotel.aspx.cs">
+      <DependentUpon>AdminHotel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminHotel.aspx.designer.cs">
+      <DependentUpon>AdminHotel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminRestaurant.aspx.cs">
+      <DependentUpon>AdminRestaurant.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminRestaurant.aspx.designer.cs">
+      <DependentUpon>AdminRestaurant.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Adventure1.aspx.cs">
+      <DependentUpon>Adventure1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Adventure1.aspx.designer.cs">
+      <DependentUpon>Adventure1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Adventure2.aspx.cs">
+      <DependentUpon>Adventure2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Adventure2.aspx.designer.cs">
+      <DependentUpon>Adventure2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Adventure3.aspx.cs">
+      <DependentUpon>Adventure3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Adventure3.aspx.designer.cs">
+      <DependentUpon>Adventure3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Adventure4.aspx.cs">
+      <DependentUpon>Adventure4.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Adventure4.aspx.designer.cs">
+      <DependentUpon>Adventure4.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CatAdventure.aspx.cs">
+      <DependentUpon>CatAdventure.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CatAdventure.aspx.designer.cs">
+      <DependentUpon>CatAdventure.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CatAmusement.aspx.cs">
+      <DependentUpon>CatAmusement.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CatAmusement.aspx.designer.cs">
+      <DependentUpon>CatAmusement.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CatFamFriend.aspx.cs">
+      <DependentUpon>CatFamFriend.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CatFamFriend.aspx.designer.cs">
+      <DependentUpon>CatFamFriend.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CatHistorical.aspx.cs">
+      <DependentUpon>CatHistorical.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CatHistorical.aspx.designer.cs">
+      <DependentUpon>CatHistorical.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CatHotel.aspx.cs">
+      <DependentUpon>CatHotel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CatHotel.aspx.designer.cs">
+      <DependentUpon>CatHotel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CatRestaurant.aspx.cs">
+      <DependentUpon>CatRestaurant.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CatRestaurant.aspx.designer.cs">
+      <DependentUpon>CatRestaurant.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FamFriend1.aspx.cs">
+      <DependentUpon>FamFriend1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FamFriend1.aspx.designer.cs">
+      <DependentUpon>FamFriend1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FamFriend2.aspx.cs">
+      <DependentUpon>FamFriend2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FamFriend2.aspx.designer.cs">
+      <DependentUpon>FamFriend2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FamFriend3.aspx.cs">
+      <DependentUpon>FamFriend3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FamFriend3.aspx.designer.cs">
+      <DependentUpon>FamFriend3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FamFriend4.aspx.cs">
+      <DependentUpon>FamFriend4.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FamFriend4.aspx.designer.cs">
+      <DependentUpon>FamFriend4.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FamFriend5.aspx.cs">
+      <DependentUpon>FamFriend5.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FamFriend5.aspx.designer.cs">
+      <DependentUpon>FamFriend5.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FamFriend6.aspx.cs">
+      <DependentUpon>FamFriend6.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FamFriend6.aspx.designer.cs">
+      <DependentUpon>FamFriend6.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FamFriend7.aspx.cs">
+      <DependentUpon>FamFriend7.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FamFriend7.aspx.designer.cs">
+      <DependentUpon>FamFriend7.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Historical1.aspx.cs">
+      <DependentUpon>Historical1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Historical1.aspx.designer.cs">
+      <DependentUpon>Historical1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Historical2.aspx.cs">
+      <DependentUpon>Historical2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Historical2.aspx.designer.cs">
+      <DependentUpon>Historical2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Historical3.aspx.cs">
+      <DependentUpon>Historical3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Historical3.aspx.designer.cs">
+      <DependentUpon>Historical3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PageAdmin.aspx.cs">
+      <DependentUpon>PageAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PageAdmin.aspx.designer.cs">
+      <DependentUpon>PageAdmin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PageAdminCat.aspx.cs">
+      <DependentUpon>PageAdminCat.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PageAdminCat.aspx.designer.cs">
+      <DependentUpon>PageAdminCat.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PageAdminHome.aspx.cs">
+      <DependentUpon>PageAdminHome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PageAdminHome.aspx.designer.cs">
+      <DependentUpon>PageAdminHome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PageAdminReg.aspx.cs">
+      <DependentUpon>PageAdminReg.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PageAdminReg.aspx.designer.cs">
+      <DependentUpon>PageAdminReg.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PageCategories.aspx.cs">
+      <DependentUpon>PageCategories.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PageCategories.aspx.designer.cs">
+      <DependentUpon>PageCategories.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PageHome.aspx.cs">
+      <DependentUpon>PageHome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PageHome.aspx.designer.cs">
+      <DependentUpon>PageHome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PageLogIn.aspx.cs">
+      <DependentUpon>PageLogIn.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PageLogIn.aspx.designer.cs">
+      <DependentUpon>PageLogIn.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PageSignIn.aspx.cs">
+      <DependentUpon>PageSignIn.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PageSignIn.aspx.designer.cs">
+      <DependentUpon>PageSignIn.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PageUserHome.aspx.cs">
+      <DependentUpon>PageUserHome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PageUserHome.aspx.designer.cs">
+      <DependentUpon>PageUserHome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PageUserProfile.aspx.cs">
+      <DependentUpon>PageUserProfile.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PageUserProfile.aspx.designer.cs">
+      <DependentUpon>PageUserProfile.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PageUserReg.aspx.cs">
+      <DependentUpon>PageUserReg.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PageUserReg.aspx.designer.cs">
+      <DependentUpon>PageUserReg.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PageWhereTo.aspx.cs">
+      <DependentUpon>PageWhereTo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PageWhereTo.aspx.designer.cs">
+      <DependentUpon>PageWhereTo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Restaurant1.aspx.cs">
+      <DependentUpon>Restaurant1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Restaurant1.aspx.designer.cs">
+      <DependentUpon>Restaurant1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Restaurant2.aspx.cs">
+      <DependentUpon>Restaurant2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Restaurant2.aspx.designer.cs">
+      <DependentUpon>Restaurant2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Restaurant3.aspx.cs">
+      <DependentUpon>Restaurant3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Restaurant3.aspx.designer.cs">
+      <DependentUpon>Restaurant3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Restaurant4.aspx.cs">
+      <DependentUpon>Restaurant4.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Restaurant4.aspx.designer.cs">
+      <DependentUpon>Restaurant4.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Restaurant5.aspx.cs">
+      <DependentUpon>Restaurant5.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Restaurant5.aspx.designer.cs">
+      <DependentUpon>Restaurant5.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Restaurant6.aspx.cs">
+      <DependentUpon>Restaurant6.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Restaurant6.aspx.designer.cs">
+      <DependentUpon>Restaurant6.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Restaurant7.aspx.cs">
+      <DependentUpon>Restaurant7.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Restaurant7.aspx.designer.cs">
+      <DependentUpon>Restaurant7.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="amusement\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>58671</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44332/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
